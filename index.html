@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Representation of Agrarian Society in the Selected Indian Fiction</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <main id="mainContent">
+    <section id="passwordScreen" class="password-screen" aria-labelledby="openingTitle">
+      <div class="academic-bg" aria-hidden="true"></div>
+
+      <div class="password-card">
+        <p class="eyebrow">Ph.D. Research Proposal Presentation</p>
+
+        <h1 id="openingTitle">
+          Representation of agrarian society in the selected Indian Fiction
+        </h1>
+
+        <h2 lang="hi">चयनित भारतीय कथा-साहित्य में कृषक समाज का प्रतिनिधित्व</h2>
+
+        <div class="meta-grid">
+          <p><strong>Scholar:</strong> Gouri Shanker / गौरी शंकर</p>
+          <p><strong>Supervisor:</strong> Prof. Anant Dadhich</p>
+          <p><strong>Institution:</strong> MLV Govt College, Bhilwara</p>
+          <p><strong>University:</strong> Maharshi Dayanand Saraswati University, Ajmer (Rajasthan)</p>
+          <p><strong>Session:</strong> 2026</p>
+        </div>
+
+        <p class="welcome-line">
+          This presentation examines agrarian crisis, land, debt, dispossession, caste, labour,
+          ecology and rural transformation in selected contemporary Indian fiction.
+        </p>
+
+        <form id="presentationPasswordForm" class="password-form">
+          <label for="presentationPassword">Enter Start Presentation Password</label>
+          <input
+            id="presentationPassword"
+            type="password"
+            autocomplete="current-password"
+            placeholder="Enter password"
+            required
+          />
+          <button type="submit">Start Presentation</button>
+          <p id="presentationPasswordError" class="error-message" role="alert"></p>
+        </form>
+
+        <p class="citation">Synopsis PDF, p. 1–3</p>
+      </div>
+    </section>
+
+    <section id="presentationApp" class="presentation-app hidden" aria-label="Slide presentation">
+      <header class="topbar">
+        <button id="homeButton" class="ghost-button" aria-label="Return to opening screen">Home</button>
+        <div class="slide-status">
+          <span id="slideIndicator">Slide 1 of 16</span>
+          <div class="progress-track" aria-hidden="true">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+        </div>
+        <button id="fullscreenButton" class="ghost-button" aria-label="Toggle fullscreen">Fullscreen</button>
+      </header>
+
+      <section id="slideContainer" class="slide-container" aria-live="polite"></section>
+
+      <nav class="slide-controls" aria-label="Slide controls">
+        <button id="prevButton" aria-label="Previous slide">Previous</button>
+        <button id="detailsButton" aria-label="Open slide details">Details</button>
+        <button id="prepCornerButton" aria-label="Open My Preparation Corner">My Preparation Corner</button>
+        <button id="nextButton" aria-label="Next slide">Next</button>
+      </nav>
+    </section>
+
+    <section id="prepCorner" class="prep-corner hidden" aria-labelledby="prepTitle">
+      <div class="prep-header">
+        <div>
+          <p class="eyebrow">Private Scholar Dashboard</p>
+          <h2 id="prepTitle">My Preparation Corner</h2>
+          <p>
+            Password-protected preparation material based strictly on the uploaded synopsis.
+          </p>
+        </div>
+        <button id="closePrepButton" class="ghost-button">Close</button>
+      </div>
+
+      <div id="prepLock" class="prep-lock">
+        <form id="prepPasswordForm" class="password-form">
+          <label for="prepPassword">Enter My Preparation Corner Password</label>
+          <input
+            id="prepPassword"
+            type="password"
+            autocomplete="current-password"
+            placeholder="Enter password"
+            required
+          />
+          <button type="submit">Open Preparation Corner</button>
+          <p id="prepPasswordError" class="error-message" role="alert"></p>
+        </form>
+      </div>
+
+      <div id="prepContent" class="prep-content hidden"></div>
+    </section>
+
+    <div id="detailsModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <article class="modal-card">
+        <button id="closeModalButton" class="modal-close" aria-label="Close details modal">×</button>
+        <h2 id="modalTitle"></h2>
+        <div id="modalBody"></div>
+      </article>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
